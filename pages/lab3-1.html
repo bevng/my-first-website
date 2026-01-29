@@ -27,10 +27,47 @@
 
         <h1> #1. Pokémon Gameboy!</h1>
         <p> you can find the link to the original video <a href="https://www.youtube.com/shorts/0kGG8jiNFlU">here...</a></p>
-        <img src="../images/lab3-vid1-1.png">
-        <img src="../images/lab3-vid1-2.png">
-        <img src="../images/lab3-vid1-3.png">
-        <img src="../images/lab3-vid1-4.png">
+      
+        <div class="slideshow">
+  <!-- Hidden radio inputs to track active slide -->
+  <input type="radio" name="slides" id="slide1" checked>
+  <input type="radio" name="slides" id="slide2">
+  <input type="radio" name="slides" id="slide3">
+  <input type="radio" name="slides" id="slide4">
+ 
+  <!-- Slides container -->
+  <div class="slides-container">
+    <!-- Slide 1 -->
+    <div class="slide slide-1">
+      <img src="../images/lab3-vid1-1.png" alt="Slide 1">
+    </div>
+    <!-- Slide 2 -->
+    <div class="slide slide-2">
+      <img src="../images/lab3-vid1-2.png" alt="Slide 2">
+    </div>
+    <!-- Slide 3 -->
+    <div class="slide slide-3">
+      <img src="../images/lab3-vid1-3.png" alt="Slide 3">
+    </div>
+    <!-- Slide 4 -->
+    <div class="slide slide-4">
+      <img src="../images/lab3-vid1-4.png" alt="Slide 4">
+    </div>
+  </div>
+
+  <!-- Next/Previous Buttons -->
+  <!-- Previous buttons -->
+  <label for="slide4" class="prev prev-1">←</label> <!-- For slide 1: prev is slide 4 -->
+  <label for="slide1" class="prev prev-2">←</label> <!-- For slide 2: prev is slide 1 -->
+  <label for="slide2" class="prev prev-3">←</label> <!-- For slide 3: prev is slide 2 -->
+   <label for="slide3" class="prev prev-4">←</label> <!-- For slide 4: prev is slide 3 -->
+ 
+  <!-- Next buttons -->
+  <label for="slide2" class="next next-1">→</label> <!-- For slide 1: next is slide 2 -->
+  <label for="slide3" class="next next-2">→</label> <!-- For slide 2: next is slide 3 -->
+  <label for="slide4" class="next next-3">→</label> <!-- For slide 3: next is slide 4 -->
+  <label for="slide1" class="next next-4">→</label> <!-- For slide 4: next is slide 1 -->
+</div>
 
 
     </main>
