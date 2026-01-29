@@ -344,9 +344,25 @@ main {
   transition: all 0.3s ease;
 }
 
-
-.images {
+.sticker-grid {
   display: flex;
-  max-width: 600px;
+  justify-content: center;
+  max-width: 100%;
   padding-top: rem;
+}
+
+.stickerbutton {
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.stickerbutton h2 {
+  text-align: center;
+  font-size: 1.5rem;
+  margin-bottom: 3rem;
+}
+  
+.stickerbutton img {
+  max-height: 280px;
 }
