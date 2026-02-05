@@ -381,7 +381,6 @@ SLIDES
   width: 1300px; /* Adjust based on your needs */
   height: 880px; /* Adjust based on your needs */
   margin: 2rem auto;
-  overflow: ; /* Hide slides outside the container */
   border-radius: 8px; /* Optional: rounded corners */
 
 }
@@ -461,3 +460,15 @@ SLIDES
 .prev::before, .next::before {
   font-weight: bold;
 }
+
+      /* make video responsive and centered */
+      .videoloop{ display:flex; justify-content:center; align-items:center; width:100%; }
+      .videoloop video{
+        max-width:100%;
+        width:auto; /* allow the video to scale down but not stretch to fill container */
+        height:auto;
+        max-height:80vh;
+        display:block;
+        margin:0 auto;
+      }
+    
