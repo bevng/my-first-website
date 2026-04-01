@@ -345,14 +345,16 @@ main {
 }
 
 .sticker-grid {
-  display: flex;
-  justify-content: center;
-  max-width: 100%;
-  padding-top: rem;
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  gap: 2rem;
+  max-width: 900px;
+  margin: 0 auto;
+
 }
 
 .stickerbutton {
-  position: relative;
+ 
   overflow: hidden;
   cursor: pointer;
 }
@@ -360,11 +362,11 @@ main {
 .stickerbutton h2 {
   text-align: center;
   font-size: 1.5rem;
-  margin-bottom: 3rem;
 }
   
 .stickerbutton img {
-  max-height: 280px;
+  max-height: 120px;
+  margin-bottom: 0.2rem;
 }
 
 SLIDES
